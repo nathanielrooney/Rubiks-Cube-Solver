@@ -11,3 +11,5 @@ L = Left (Orange)
 B = Back (Green)
 
 When entering cube pieces' colors, enter exactly either "Yellow", "Orange", "Blue", "Red", "Green", or "White" (without the quotation marks; case-sensitive). I haven't implemented any real checks that the inputted cube is possible (or that the inputted colors are in the cases that work for the code), so if you enter in wrong information you will have to redo the entire process. 
+
+Download the three .py files and run "Cube.py" to use.
