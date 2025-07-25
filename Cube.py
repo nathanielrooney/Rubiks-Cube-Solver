@@ -79,11 +79,3 @@ if Cube != SolvedCube:
 print("Moves:")
 for move in Ledger:
     print(move, end= " ")
-
-#print(Ledger)
-
-#print(Two)
-
-
-#print(OrangeF2LLeft(SolvedCube))
-
