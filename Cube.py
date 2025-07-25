@@ -1,8 +1,6 @@
 from InputtingCube import *
 from Moves import *
 
-
-
 SolvedCube = [[["Yellow", "Yellow","Yellow"],["Yellow", "Yellow","Yellow"], ["Yellow", "Yellow","Yellow"]],[["Orange","Orange","Orange"],["Orange","Orange","Orange"],["Orange","Orange","Orange"]],[["Blue","Blue","Blue"],["Blue","Blue","Blue"],["Blue","Blue","Blue"]],[["Red","Red","Red"],["Red","Red","Red"],["Red","Red","Red"]],[["Green","Green","Green"],["Green","Green","Green"],["Green","Green","Green"]],[["White","White","White"],["White","White","White"],["White","White","White"]]]
 Scramble = []
 
@@ -54,9 +52,13 @@ Cube, Ledger = InsertWhiteOrangeBlueCorner(Cube, Ledger)
 # print(Cube):
 # print(Ledger)
 Ledger.append("Solving First Two Layers:")
+Ledger.append("Inserting Blue and Red Edge:")
 Cube, Ledger = InsertBlueRedEdge(Cube, Ledger)
+Ledger.append("Inserting Red and Green Edge:")
 Cube, Ledger = InsertRedGreenEdge(Cube, Ledger)
+Ledger.append("Inserting Green and Orange Edge:")
 Cube, Ledger = InsertGreenOrangeEdge(Cube,Ledger)
+Ledger.append("Inserting Orange and Blue Edge:")
 Cube, Ledger = InsertOrangeBlueEdge(Cube,Ledger)
 
 #Solving Yellow Cross
