@@ -241,3 +241,56 @@ while GreenWhiteRed[2] not in Colors:
 RedFace = [[RedBlueYellow[0],YellowRed[1],GreenRedYellow[1]],[BlueRed[1],"Red",RedGreen[0]],[BlueWhiteRed[2],WhiteRed[1],GreenWhiteRed[2]]]
 
 Cube = [YellowFace, OrangeFace, BlueFace, RedFace, GreenFace, WhiteFace]
+
+#Valid cube basic check:
+EdgePieces = [YellowBlue,YellowRed, YellowGreen,YellowOrange, BlueOrange, BlueRed, RedGreen, GreenOrange, WhiteBlue, WhiteRed, WhiteGreen, WhiteOrange]
+YellowEdges = 0
+OrangeEdges = 0
+BlueEdges = 0 
+RedEdges = 0
+GreenEdges = 0
+WhiteEdges = 0
+for EdgePiece in EdgePieces:
+    for Color in EdgePiece:
+        if Color == "Yellow":
+            YellowEdges += 1
+        elif Color == "Orange":
+            OrangeEdges += 1
+        elif Color == "Blue":
+            BlueEdges += 1
+        elif Color == "Red":
+            RedEdges += 1
+        elif Color == "Green":
+            GreenEdges += 1
+        elif Color == "White":
+            WhiteEdges += 1
+for Colors in [YellowEdges, OrangeEdges, BlueEdges, RedEdges, GreenEdges, WhiteEdges]:
+    if Colors != 4:
+        print("Invalid inputted cube. Please try again!")
+        quit()
+
+CornerPieces = [GreenOrangeYellow, GreenRedYellow, OrangeBlueYellow, RedBlueYellow, GreenOrangeWhite, OrangeWhiteBlue, BlueWhiteRed, GreenWhiteRed]
+YellowCorners = 0
+OrangeCorners = 0
+BlueCorners = 0 
+RedCorners = 0
+GreenCorners = 0
+WhiteCorners = 0
+for CornerPiece in CornerPieces:
+    for Color in CornerPiece:
+        if Color == "Yellow":
+            YellowCorners += 1
+        elif Color == "Orange":
+            OrangeCorners += 1
+        elif Color == "Blue":
+            BlueCorners += 1
+        elif Color == "Red":
+            RedCorners += 1
+        elif Color == "Green":
+            GreenCorners += 1
+        elif Color == "White":
+            WhiteCorners += 1
+for Colors in [YellowCorners, OrangeCorners, BlueCorners, RedCorners, GreenCorners, WhiteCorners]:
+    if Colors != 4:
+        print("Invalid inputted cube. Please try again!")
+        quit()
